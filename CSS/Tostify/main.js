@@ -40,7 +40,8 @@ const buildRows = () => {
       </div>`;
   });
 
-  console.log("content", content);
+  console.log("content", content); 
+  
 
   table.innerHTML = content;
 };
