@@ -1,0 +1,679 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <title>Real world Frontend Website Design using html css js</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+     
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+     
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.1/lity.css">
+     
+     <link rel="stylesheet" href="main.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+     
+
+      <style type="text/css">
+          .closeModalBtn{
+            opacity: 1;
+            background-color: #000 !important;
+            color: #fff !important;
+            border-radius: 4rem;
+            width: 4rem;
+            height: 4rem;
+              margin-top: -40px;
+          }
+          .modal_head{
+            background-color: #0095FB !important;
+            color: #fff !important;   
+            padding: 1rem !important;  
+              letter-spacing: 2px;
+              font-size: 18px;
+              
+            text-align: center !important;        
+          }
+          .custom_modal{
+            box-shadow: 0 25px 70px 0 rgb(0 0 0 / 65%) !important;
+            width: 85% !important;
+          }
+          
+          .content-area h3{
+              font-family: "Poppins",sans-serif;
+              font-size: 25px;
+              margin-bottom: 20px;
+          }
+          
+          .content-area p{
+              font-family: "Poppins",sans-serif;
+              font-size: 17px;
+              margin-bottom: 30px;
+          }
+          
+          .content-area ul li{
+              list-style: none;
+              line-height: 22px;
+             
+              
+          }
+          
+          .content-area .fa{
+              color: deepskyblue;
+               margin-right: 20px;
+               
+          }
+          
+          .content-area img{
+              margin-bottom: 55px;               
+              transition: all 0.5s ease-in-out;
+          }
+          
+          
+          .content-area img:hover{
+              box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+          }
+          .modal-content{
+              padding: 30px;
+              margin-top: 84px;
+              background-image: url(images/dots.png);
+               
+          }
+          
+          .modal_head{
+               background-color: #fc9842;
+               background-image: linear-gradient(315deg, #fc9842 0%, #fe5f75 74%);              
+              font-family: 'Poppins',sans-serif;
+              
+          }
+          
+           
+      </style>
+     
+ </head>
+ <body>
+     <div class="main">
+         <header class="header">
+             <a href="" class="logo">LOGO</a>
+             <div class="menuToggle"></div>
+             <nav class="nav">
+                 <ul>
+                     <li><a href="">Home</a></li>
+                     <li><a data-toggle="modal" data-target="#blogModal" href="">Blog</a></li>
+                     <li><a data-toggle="modal" data-target="#pageModal" href="">Services</a></li>
+                     <li><a data-toggle="modal" data-target="#freelanceModal" href="">Freelancer</a></li>
+                     <li><a data-toggle="modal" data-target="#galleryModal" href="">Our Team</a></li>
+                     <li><a data-toggle="modal" data-target="#contactModal" href="">Contact</a></li>
+                     <li><a href=""><i class="fa fa-search"></i></a></li>
+                 </ul>
+             </nav>
+         </header>
+         
+         <div class="contents">
+             <div class="profession"><span>D</span> designer</div>
+             <div class="name"><span>UI/UX <br>Head..</span></div>
+             <a href="#" class="link1">WHO AM I</a>
+             <a href="#" class="contact_me_link">CONTACT ME</a>
+             <a href="#" class="portfolio_link">VIEW PORTFOLIO</a>
+         </div>
+         
+         
+         <div class="whoAmi">
+             <div class="contents">
+                 <div class="name"><span>Brandy <br> Doe</span></div>
+                 <div class="text-content">
+                     <h2>                         
+                        Brandy Doe Designs is a one-woman freelance graphic design studio specializing in logo development, print design, and web graphics.
+                     </h2>
+                     <p>
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione doloribus quaerat minus, ullam accusamus tenetur ea sit maiores. Sunt nihil illum, id voluptate earum accusamus, facilis iure iusto animi quidem.
+                     </p>
+                 </div>
+                 <a href="#" class="back-to-main">BACK TO MAIN</a>
+                 <a href="#" class="contact_me_link">CONTACT ME</a>
+             </div>
+         </div>
+         
+         <div class="contactMe">
+             <div class="form">
+                 <div class="top">
+                     <h2>I'd love to chat with you about any
+                        upcoming design projects for your
+                        business.</h2>
+                    <div class="contact-info">
+                        <p class="phone">
+                            <i class="fa fa-phone"></i>
+                            907-432-2345
+                        </p>
+                        
+                        <p class="done">
+                            <i class="fa fa-envelope"></i>
+                            support@unknown.com
+                        </p>                       
+                    </div>
+                 </div>
+                 
+                 <form>
+                     <input type="text" placeholder="Your Name" class="w50 fl" required>
+                     
+                     <input type="text" placeholder="Your Email" class="w50 fr" required>
+                     
+                     <div class="clear"></div>
+                     
+                     <input type="text" placeholder="Subject" required>
+                     
+                     <textarea placeholder="Message"></textarea>
+                     
+                     <input type="submit" value="Send">                 </form>
+                 
+                    <a href="#" class="back-to-main">BACK TO MAIN</a> </div>
+              </div>
+         
+         <div class="portfolio">
+             <div class="p-list">
+                 <ul>
+                     <li style="background-image: url(images/img1-1024x769.jpg.png);">
+                         <a href=""><span>Being in your control</span></a>
+                     </li>
+                     
+                      <li style="background-image: url(images/img2-1024x681.jpg.png);">
+                         <a href=""><span>A Guide to air balls at any age</span></a>
+                     </li>
+                     
+                     
+                      <li style="background-image: url(images/img3-1024x577.jpg.png);">
+                         <a href=""><span>Wondering How To Make Your Work Rock ?</span></a>
+                     </li>
+                      
+                 </ul>
+                 
+                 
+                  <ul>
+                     <li style="background-image: url(images/4o.png);">
+                         <a href=""><span>10 Warning Signs of your phone Demise</span></a>
+                     </li>
+                     
+                      <li style="background-image: url(images/img5-768x1024.jpg.png);">
+                         <a href=""><span>13 Myths About Room</span></a>
+                     </li>
+                     
+                     
+                      <li style="background-image: url(images/ok.png);">
+                         <a href=""><span>Here is a method that is helping foot</span></a>
+                     </li>                      
+                 </ul>                   
+             </div>
+             <a href="#" class="back-to-main">BACK TO MAIN</a>
+             <a href="#" class="contact_me_link">CONTACT ME</a>
+         </div>
+         
+         
+         <div class="video-button">
+             <a href="https://youtu.be/kAGkAJDLYGY" data-lity>
+                 <span><i class="fa fa-play"></i></span>
+             </a>
+         </div>
+         
+         
+         <div class="social-buttons-area">
+             <div class="social-buttons">
+                 <a href=""><i class="fa fa-instagram"></i></a>
+                 <a href=""><i class="fa fa-facebook"></i></a>
+                 <a href=""><i class="fa fa-behance"></i></a>
+                 <a href=""><i class="fa fa-dribbble"></i></a>
+                 <a href=""><i class="fa fa-twitter"></i></a>
+             </div>
+         </div>
+        
+         
+         
+         <div class="modal fade bd-example-modal-lg" id="blogModal" tabindex="-1" role="dialog" aria-labelledby="blog_ModalLabel" aria-hidden="true">
+          <div class="modal-dialog custom_modal" role="document">
+            <div class="modal-content">
+             <br><br>
+              <div class="modal-body">
+                <div class="row">
+                  
+                    <div class="col-md-2">
+                        <h2 class="modal_head" style="margin-top: -24px;">Blog</h2>
+                    </div>
+                </div>
+                <p class="rev col-md-11 col-md-offset-1">
+                    <button type="button" class="close closeModalBtn" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </p>                
+                
+                 <div class="content-area">
+                    <div class="row">
+                       <br><br>
+                        <div class="col-lg-6" data-ckav-smd="margin-b-40">
+                            <img class="radius-10" src="images/1.png" alt="about image">
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="heading-content small bold-600">Story behind success</h3>
+                            
+                            <p class="heading-content-sub bold-400 tiny margin-b-30">Lorem ipsum, dolor consectetur sit amet consectetur adipisicing elit. Debitis consectetur voluptate possimus.</p>
+                            <p class="margin-b-30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsa molestias illo ratione totam itaque vitae, dicta reprehenderit illum libero eaque dolores deleniti non modi eveniet ipsam, corporis vel delectus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat sequi quod quia ea perspiciatis, a incidunt dolorum libero totam at impedit neque vitae unde, rerum odio quaerat temporibus atque nemo?</p>
+
+                            <ul class="list-1 color-text-dark font-01" data-ckav-smd="align-left margin-b-30">
+                                <li class="margin-b-5"><i class="list-bullet margin-r-10 color-text-default fa fa-check"></i> Lorem ipsum dolor sit amet consectetur.</li>
+                                <li class="margin-b-5"><i class="list-bullet margin-r-10 color-text-default fa fa-check"></i> Ullamco laboris nisi ut aliquip.</li>
+                                <li class="margin-b-5"><i class="list-bullet margin-r-10 color-text-default fa fa-check"></i> Eiusmod tempor incididunt ut labore.</li>
+                                <li class="margin-b-5"><i class="list-bullet margin-r-10 color-text-default fa fa-check"></i> Consectetur adipisicing elit seddo.</li>
+                                <li class="margin-b-5"><i class="list-bullet margin-r-10 color-text-default fa fa-check"></i> Utenim ad minim veniam quis.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal fade bd-example-modal-lg" id="pageModal" tabindex="-1" role="dialog" aria-labelledby="page_ModalLabel" aria-hidden="true">
+          <div class="modal-dialog custom_modal" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h2 class="modal_head ok" style="margin-top: -30px; margin-left: 65px;">Services</h2>
+                    </div>
+                </div>
+                <p class="dev col-sm-12">
+                    <button type="button" class="close closeModalBtn" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </p>                
+                 
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-4 col-md-6 col-sm-6">
+<div class="item-service wow fadeInLeft" data-wow-delay="0.2s">
+<div class="item-service-icon">
+<i><img src="images/compass@2x.png" alt=""></i>
+</div>
+<div class="item-service-content">
+<h5>Web Development</h5>
+<p>Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy</p>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-6">
+<div class="item-service wow fadeInLeft" data-wow-delay="0.4s">
+<div class="item-service-icon">
+<i><img src="images/helm@2x.png" alt=""></i>
+</div>
+<div class="item-service-content">
+<h5>Photography</h5>
+<p>Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy</p>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-6">
+<div class="item-service wow fadeInLeft" data-wow-delay="0.6s">
+<div class="item-service-icon">
+<i><img src="images/hot-air-balloon@2x.png" alt=""></i>
+</div>
+<div class="item-service-content">
+<h5>Web Design</h5>
+<p>Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy</p>
+</div>
+</div>
+</div>
+<br>
+<div class="col-lg-4 col-md-6 col-sm-6">
+<div class="item-service wow fadeInLeft" data-wow-delay="0.8s">
+<div class="item-service-icon">
+<i><img src="images/starfish@2x.png" alt=""></i>
+</div>
+<div class="item-service-content">
+<h5>App Developing</h5>
+<p>Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy</p>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-6">
+<div class="item-service wow fadeInLeft" data-wow-delay="1s">
+<div class="item-service-icon">
+<i><img src="images/pin-map@2x.png" alt=""></i>
+</div>
+<div class="item-service-content">
+<h5>Video Editing</h5>
+<p>Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy</p>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-6">
+<div class="item-service wow fadeInLeft" data-wow-delay="1.2s">
+<div class="item-service-icon">
+<i><img src="images/lounge@2x.png" alt=""></i>
+</div>
+<div class="item-service-content">
+<h5>SEO Expert</h5>
+<p>Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal fade bd-example-modal-lg" id="freelanceModal" tabindex="-1" role="dialog" aria-labelledby="freelance_ModalLabel" aria-hidden="true">
+          <div class="modal-dialog custom_modal" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h2 class="modal_head ko" style="margin-top: -35px; margin-bottom: -7px;">Freelancer</h2>
+                    </div>
+                </div>
+                <p class="rol col-md-10 col-md-offset-2">
+                    <button type="button" class="close closeModalBtn now" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </p>                
+                  <section id="works">
+
+        <div class="content-box">
+           
+
+            <div class="container-fluid">
+
+                <div class="row no-gutters">
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="work/1.jpg.png" title="Work Description Goes Here">
+                                <img src="work/1.jpg.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="work/2.jpg" title="Work Description Goes Here">
+                                <img src="work/2.jpg.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="work/5.jpg" title="Work Description Goes Here">
+                                <img src="work/5.jpg.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="work/4.jpg" title="Work Description Goes Here">
+                                <img src="work/4.jpg" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="work/3.jpg" title="Work Description Goes Here">
+                                <img src="work/3.jpg.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="work/6.jpg" title="Work Description Goes Here">
+                                <img src="work/6.jpg.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="work/7.jpg" title="Work Description Goes Here">
+                                <img src="work/7.jpg.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="work/8.jpg" title="Work Description Goes Here">
+                                <img src="work/8.jpg.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="modal fade bd-example-modal-lg" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="gallery_ModalLabel" aria-hidden="true">
+          <div class="modal-dialog custom_modal" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h2 class="modal_head k" style="margin-top: -10px; margin-left: 59px; font-size: 16px;">Our Team</h2>
+                    </div>
+                </div>
+                <p class="oke">
+                    <button type="button" style="margin-left: -200px !important;" class="close closeModalBtn" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </p>               
+                 <section class="team "> 
+                  <div class="container">
+                <div class="row">
+ 
+                    <div class="section-head text-center col-sm-12">
+                        <h4>WEB DESIGN</h4>
+                        <h2>OUR <span class="pink">TALENTED</span> TEAM</h2>
+                        <br><br>
+                    </div>
+                  
+                        <div class="item col-md-4">
+                            <div class="hover3d">
+                                <div class="hover3d-child">
+                                    <div class="team-img">
+                                        <img src="images/4.jpg.png"  class="img-responsive" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <div>
+                                            <h6>Alex Smith</h6>
+                                            <span>Project Manager</span>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and type setting industry.</p>
+                                            <div class="social">
+                                                <a href="#0" class="icon">
+                                                    <i class="fa fa-facebook-f"></i>
+                                                </a>
+                                                <a href="#0" class="icon">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                                <a href="#0" class="icon">
+                                                    <i class="fa fa-behance"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="item col-md-4">
+                            <div class="hover3d">
+                                <div class="hover3d-child">
+                                    <div class="team-img">
+                                    <img src="images/now.jpg.png"  class="img-responsive" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <div>
+                                            <h6>Alex Smith</h6>
+                                            <span>Project Manager</span>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and type setting industry.</p>
+                                            <div class="social">
+                                                <a href="#0" class="icon">
+                                                    <i class="fa fa-facebook-f"></i>
+                                                </a>
+                                                <a href="#0" class="icon">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                                <a href="#0" class="icon">
+                                                    <i class="fa fa-behance"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item col-md-4">
+                            <div class="hover3d">
+                                <div class="hover3d-child">
+                                    <div class="team-img">
+                                        <img src="images/2c.jpg.png" class="img-responsive" alt="">
+                                        
+                                    </div>
+                                    <div class="info">
+                                        <div>
+                                            <h6>Alex Smith</h6>
+                                            <span>Project Manager</span>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and type setting industry.</p>
+                                            <div class="social">
+                                                <a href="#0" class="icon">
+                                                    <i class="fa fa-facebook-f"></i>
+                                                </a>
+                                                <a href="#0" class="icon">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                                <a href="#0" class="icon">
+                                                    <i class="fa fa-behance"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+ 
+                   
+
+                </div>
+            </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+
+
+
+        <div class="modal fade bd-example-modal-lg" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contact_ModalLabel" aria-hidden="true">
+          <div class="modal-dialog custom_modal" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h2 class="modal_head" style="margin-top: -30px;">Locations</h2>
+                    </div>
+                </div>
+                <p>
+                    <button type="button" class="close closeModalBtn" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </p>                
+                
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m27!1m12!1m3!1d1509264.0847680196!2d83.8286898509562!3d25.72513164045612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m12!3e0!4m4!2s26.363002%2C84.303893!3m2!1d26.363001999999998!2d84.303893!4m5!1s0x39f29937c52d4f05%3A0x831a0e05f607b270!2sPatna%2C%20Bihar!3m2!1d25.5940947!2d85.1375645!5e0!3m2!1sen!2sin!4v1630222098481!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                 <div class="socialize text-center">
+                     <i class="fa fa-facebook"></i>
+                     <i class="fa fa-twitter"></i>
+                     <i class="fa fa-linkedin"></i>
+                     <i class="fa fa-behance"></i>
+                     <i class="fa fa-dribbble"></i>
+                     
+                 <p>
+                     All the Copyrights Reserved 2021-22
+                 </p>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+         
+     </div>
+
+    
+     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.1/lity.min.js"></script>
+     <script src="images/jquery.hover3d.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+     <script>
+     
+     $(document).ready(function(){
+         $(".link1").click(function(){
+             $(".whoAmi").addClass("active");
+         });
+         
+          $(".contact_me_link").click(function(){
+             $(".contactMe").addClass("active");
+         });
+        
+
+          $(".portfolio_link").click(function(){
+             $(".portfolio").addClass("active");
+         });
+        
+
+         
+         $(".back-to-main").click(function(){
+             $(".whoAmi").removeClass("active");
+             $(".contactMe").removeClass("active");
+             $(".portfolio").removeClass("active");
+         });
+          
+     });
+     
+     
+     
+      
+
+     //Responsive Menu
+     let menuToggle = document.querySelector('.menuToggle');
+     let nav = document.querySelector('nav');
+     menuToggle.onclick = function(){
+     menuToggle.classList.toggle('active')
+     nav.classList.toggle('active')
+     }
+     
+     </script>
+     
+     
+     <script>
+    $(".hover3d").hover3d({
+        selector: ".hover3d-child",
+        invert: true
+    });
+</script>
+     
+     
+   
+ </body>
+ </html>
